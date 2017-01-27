@@ -17,6 +17,7 @@ while (True):
 	
 	if (MESSAGE == "quit"): break
 	data = s.recv(BUFFER_SIZE)
+	print data
 
 
 s.close()

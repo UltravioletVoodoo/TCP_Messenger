@@ -6,7 +6,7 @@ import socket
 
 TCP_IP = raw_input("Enter the IP address (Use 127.0.0.1 for messaging self)")
 TCP_PORT = 5005
-BUFFER_SIZE = 50 #Normally 1024, but we want a fast response, 50 is the "character limit"
+BUFFER_SIZE = 1024 #This represents the character limit, just chose 1024 because it is a power of 2 and its quite large for my needs
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((TCP_IP, TCP_PORT))
@@ -23,5 +23,5 @@ while True:
 	conn.send(data) #echo
 conn.close()
 
-
+print "Connection Terminated"
 r = raw_input("Press any key to continue")

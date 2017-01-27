@@ -21,8 +21,5 @@ while (True):
 
 s.close()
 
-print "Connection terminated"
-
-
-
+print "Connection Terminated"
 r = raw_input("Press any key to continue")
